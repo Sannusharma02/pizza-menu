@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom/client";
 
+
 const pizzaData = [
     {
         name: "Focaccia",
@@ -51,7 +52,11 @@ function App(){
 }
 
 function Pizza(){
-    return <h2>Pizza</h2>
+    return (<div>
+        <img src="./pizzas/spinaci.jpg" alt="Pizza Spinaci" />
+        <h2>Pizza</h2>
+        <p>Tomato, mozzarella, spinach, and ricotta cheese</p>
+    </div>)
 }
 
 ReactDom.createRoot(document.getElementById("root")).render(<React.StrictMode>< App /></React.StrictMode>);

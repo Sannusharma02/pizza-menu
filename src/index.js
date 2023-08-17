@@ -48,15 +48,22 @@ const pizzaData = [
 ];
 
 function App(){
-    return <div><h1>Hello React</h1><Pizza /></div>
+    return <div>
+        <h1>Hello React</h1>
+        <Pizza />
+        <Pizza />
+        <Pizza />
+    </div>
 }
 
 function Pizza(){
-    return (<div>
-        <img src="./pizzas/spinaci.jpg" alt="Pizza Spinaci" />
-        <h2>Pizza</h2>
+    return (
+        <div>
+        <img src='./pizzas/spinaci.jpg' alt='Pizza Spinaci' />
+        <h2>Pizza Spinaci</h2>
         <p>Tomato, mozzarella, spinach, and ricotta cheese</p>
-    </div>)
+    </div>
+    );
 }
 
 ReactDom.createRoot(document.getElementById("root")).render(<React.StrictMode>< App /></React.StrictMode>);
